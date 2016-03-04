@@ -1,7 +1,7 @@
 #!/bin/sh
 # Wrapper to bootstrap Salt and add settings to keep connection alive
 
-/bin/sh bootstrap.sh $@
+/bin/sh bootstrap-salt.sh $@
 cat << EOF > /etc/salt/minion.d/42-keepalive.conf
 ping_interval: 1
 tcp_keepalive: True
