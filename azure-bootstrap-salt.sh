@@ -8,3 +8,4 @@ tcp_keepalive: True
 tcp_keepalive_idle: 120
 EOF
 /usr/sbin/service salt-minion restart
+exit 0
